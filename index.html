@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SafeRide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🚗 SafeRide Insurance</h1>
+
+  <div class="card">
+    <h3>Your Trip</h3>
+    <input type="number" id="distance" placeholder="Distance (km)">
+    <button onclick="calculatePremium()">Calculate Premium</button>
+  </div>
+
+  <div class="card highlight">
+    <h3>Premium</h3>
+    <p id="premium">--</p>
+  </div>
+
+  <div class="card">
+    <h3>Simulate Event</h3>
+    <div class="btn-group">
+      <button onclick="simulateAccident()">🚨 Accident</button>
+      <button onclick="simulateDelay()">⏱ Delay</button>
+    </div>
+  </div>
+
+  <div class="card payout">
+    <h3>Payout</h3>
+    <p id="payout">--</p>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
